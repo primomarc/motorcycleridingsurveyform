@@ -1,0 +1,207 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Motorcycle Riding Survey Form</h1>
+    <p id="description" class="description text-center">
+      This survey will identify motorcycle riders preferences 
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your riding preference?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select riding preference</option>
+        <option value="cruiser">Cruiser</option>
+        <option value="sport">Sport</option>
+        <option value="touring">Touring</option>
+        <option value="standard">Standard</option>
+        <option value="dual-purpose">Dual-Purpose</option>
+        <option value="dirt-bike">Dirt Bike</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Do you think riding motorcycle is more efficient in todays situation?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What riding gear would you like to invest more?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="helmets"
+          type="checkbox"
+          class="input-checkbox"
+        />Helmets</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="eyeglasses"
+          type="checkbox"
+          class="input-checkbox"
+        />Eyeglasses</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="mask"
+          type="checkbox"
+          class="input-checkbox"
+        />Mask</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="jacket"
+          type="checkbox"
+          class="input-checkbox"
+        />Jacket</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gloves"
+          type="checkbox"
+          class="input-checkbox"
+        />Gloves</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="riding-pants"
+          type="checkbox"
+          class="input-checkbox"
+        />Riding Pants</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="riding-boots"
+          type="checkbox"
+          class="input-checkbox"
+        />Riding Boots</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="elbow-pads"
+          type="checkbox"
+          class="input-checkbox"
+        />Elbow Pads</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="knee-pads"
+          type="checkbox"
+          class="input-checkbox"
+        />Knee Pads</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="body-armor"
+          type="checkbox"
+          class="input-checkbox"
+        />Body Armor</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="balaclava"
+          type="checkbox"
+          class="input-checkbox"
+        />Balaclava</label
+      >
+    </div>
+
+<div class="form-group">
+      <p>What is your favorite helmet brand?
+      </p>
+      <select id="most-like" name="mostlike" class="form-control" required>
+        <option disabled selected value>Select helmet brand</option>
+        <option value="AGV">AGV Helmet</option>
+        <option value="shoei">Shoei Helmet</option>
+        <option value="HJC">HJC Helmet</option>
+        <option value="arai">Arai Helmet</option>
+        <option value="KYT">KYT Helmet</option>
+        <option value="shark">Shark Helmet</option>
+        <option value="others">Others</option>
+      </select>
+    </div>    
+    
+    <div class="form-group">
+      <p>Explain why you love riding motorcycle bike.</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
